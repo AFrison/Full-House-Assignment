@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full House</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id= "container">
+    <div id= "main">
+      <h1>Full House</h1>
+
+      <h2>Draw your hand and see if you are lucky enough to get a full house!</h2>
+       
+    <div class = "cardimg">
+      <img id="card1img"></img>
+      <img id="card2img"></img>
+      <img id="card3img"></img>
+      <img id="card4img"></img>
+      <img id="card5img"></img>
+      <img id="card6img"></img>
+      <img id="card7img"></img>
+    </div>
+
+      <p id="card1"></p>
+      <p id="card2"></p>
+      <p id="card3"></p>
+      <p id="card4"></p>
+      <p id="card5"></p>
+      <p id="card6"></p>
+      <p id="card7"></p>
+
+    <h3 id="result"></h3>
+
+    </div>
+  </div>
+
+  <div id = "buttoncontainer">
+    <button type="button" onclick="run()">Draw and Check</button>
+
+    <button type="button" onclick="makeFullHouse()">Full House Guaranteed</button>
+  </div>
+</body>
+</html>

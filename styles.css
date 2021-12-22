@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+#container{
+  min-height:100%
+}
+
+#main{
+  overflow: auto;
+  padding-bottom: 140px;
+}
+
+#buttoncontainer{
+  position: relative;
+  height: 100px;
+  margin-top: -120px;
+  clear:both;
+  text-align:justify;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1{
+  text-align: center;
+  padding-top: 5%;
+  font-size: 100px;
+}
+
+h2{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 80px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 5%;
+  font-size: 50px;
+}
+
+.cardimg{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+img{
+  width: 10%;
+  height: auto;
+}
+
+/* CSS */
+button{
+  background-color: #df1111;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
