@@ -133,7 +133,9 @@ function fullHouse(){
       }
       //Checks if there is extra cards of the same value
       //1 extra means we have a pair, 2 extra means we have 3 of a kind, 
-      //4 of a kind not counted since we can't get a full house with 5 cards if we have a 4 of a kind
+      //3 extra means we have 4 of a kind. If there is nothing greater 
+      //than a 3 of a kind then we don't look at pairs. Lastly if a first 3 of a kind 
+      //or better has been found then put the next one into pairs
       if(count >= 2 && threekind == 14){
         threekind = cards[i];
       }
@@ -166,9 +168,9 @@ function makeFullHouse(){
   card6 = 39; //King of Hearts
   card3 = 52; //King of Spades
   //card6 = 26; //King of Diamonds
-  card7 = 13; 
-  //card7= 12;
-  card1 = 2;
+  card7 = 13; //King of Clubs
+  //card7= 12; // Queen of Clubs
+  card1 = 2; //2 of Clubs
 
   setElements();
   fullHouse();
